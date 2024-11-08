@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="BAME Records is a revolutionary platform for digital music distribution." />
+    <meta name="keywords" content="BAME Records, music, distribution, streaming" />
+    <title>BAME-RECORDS</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png" />
+    <!-- Fontawsome  ---->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Jquery  ---->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- css  ---->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <nav>
+          <ul>
+            <li class="logo">
+              <a href="/"> <img src="assets/images/bame logo-crop.png" alt="BAME-Records logo" /> <span>BAME</span> </a>
+            </li>
+          </ul>
+          <ul class="nav-list">
+            <li><a href="#about">About</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#content">Contact</a></li>
+            <li onclick="toggleNavList()" class="btn">
+              <a><i class="fa fa-angle-double-up" aria-hidden="true"></i></a>
+            </li>
+          </ul>
+        </nav>
+        <button id="nav-list-toggle" onclick="toggleNavList()" class="btn nav-bar " title="nav bar" type="button">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </button>
+      </header>
+
+      <main>
+        <div class="content">
+          <span></span>
+          <div class="text">
+            <h1>BAME Records</h1>
+            <p>A revolutionary platform for digital music distribution.</p>
+          </div>
+          <a href="#about" class="scroll-down"><i class="fa fa-angle-double-down"></i> <span>SCROLL DOWN</span></a>
+        </div>
+
+        <div class="horizontal-line"></div>
+
+        <article id="about" class="card-container ">
+          <section class="card details-card">
+            <img src="assets/images/music-production.jpeg" alt="Card Image" />
+            <div class="card-content">
+              <h2 class="card-title">About BAME</h2>
+              <p class="card-description">
+                BAME records is a renowned music studio label based in ethiopia that has been a key player in the country's
+                music industry for the past 15 years..founded by surafel aklilui, bame records is knovsn for its dedication to
+                promoting ethiopian talent and preserving the rich musical heritage ofthe nation.
+                <span class="d-none">
+                  specializing in a diverse range of genres including traditional ethiopian music, hip-hop, and fusion, bame
+                  records has provid Specializing in a diverse Specializing in a diverse range of genres including traditional
+                  Ethiopian muBAME Rsic, jazz, hip-hop, and contemporary fusion, BAME Records prides itself on its versatility
+                  and commitment to artistic innovation.range of genres including traditional Ethiopian music, jazz, hip-hop,
+                  and contemporary fusion, BAME Records prides itself on its versatility and commitment to artistic innovation.
+                  fusion, BAME Records prides itself on its versatility and commitment to artistic innovation. ed a platform for
+                  emerging artists to showcase their creativity and reach a wider audience both locally and internationally.
+                  With state-of-the-art recording studios, production facilities. and a team of experienced professionals.BAME
+                  Records offers artists a nurturing environment to develop Their craft and produce high-quality music. The
+                  label has I significant contributions to the Ethiopian music scene.In addition to its musical endeavors. name
+                  Records is actively intoned in community engagement initiatives la aimed at supporting aspiring musicians,
+                  organizing music Workshops and promoting cultural exchange through L music.
+                </span>
+              </p>
+            </div>
+          </section>
+          <section class="card details-card">
+            <img src="assets/images/gutar.jpeg" alt="Card Image" />
+            <div class="card-content">
+              <h2 class="card-title">Mission and Vision</h2>
+              <p class="card-description">
+                Led by a dedicated team of music enthusiasts and event professions, BAME Records is committed to nurturing young
+                artist, providing them with a platform to showcase their talent, and creating music that resonates with
+                audiences both locally and internationally . our vision is to be a leading force in shaping the future of
+                Ethiopian music.
+              </p>
+            </div>
+          </section>
+          <section class="card details-card">
+            <img src="assets/images/headphone-piano.png" alt="Card Image" />
+            <div class="card-content">
+              <h2 class="card-title">Genres And Specialization</h2>
+              <p class="card-description">
+                Specializing in a diverse range of genres including traditional Ethiopian music,jazz, hip-hop, an contemporary
+                fusion, BAM E Records prides itself on its versatility and commitment to artistic innovation.
+              </p>
+            </div>
+          </section>
+        </article>
+
+        <div class="horizontal-line"></div>
+
+        <article class="card-container ">
+          <div class="content-card">
+            <!-- image transition -->
+            <div class="card">
+              <div class="image-slider">
+                <div id="bame-images" class="image-container">
+                  <img src="assets/images/podcast.png" alt="" /> <img src="assets/images/music-production.jpeg" alt="" />
+                  <img src="assets/images/headphone-piano.png" alt="" /> <img src="assets/images/party-image.jpeg" alt="" />
+                  <img src="assets/images/music-production.jpeg" alt="" />
+                </div>
+                <div class="controls">
+                  <button onclick="BameImageNext()"><i class="fa-solid fa-caret-left"></i></button>
+                  <button onclick="BameImageNext()"><i class="fa fa-solid fa-caret-right"></i></button>
+                </div>
+              </div>
+            </div>
+            <!-- music player -->
+            <div class="card bg-image">
+              <div class="music-palyer">
+                <div class="detail"><span class="artist">artist name </span> <span class="title">artist name</span></div>
+                <section class="play-hidden">
+                  <div class="time"><span id="current-time">0:00</span> - <span id="duration">0:00</span></div>
+
+                  <div class="slider">
+                    <input type="range" min="0" max="100" value="0" />
+                    <div class="progress-bar"></div>
+                  </div>
+                </section>
+
+                <div class="controls">
+                  <audio title="ere" src="assets/music/music-src/Negestat - Eree (Official Music Video).mp3" id="audio"></audio>
+                  <button class="play-hidden" onclick="previousMusic()"><i class="fa-solid fa-caret-left"></i></button>
+
+                  <button class="play-audio" onclick="AudioPlayer()" class="player">
+                    <i class="fa fa-play" aria-hidden="true"></i>
+                  </button>
+
+                  <button class="play-hidden" onclick=" nextMusic()"><i class="fa-solid fa-caret-right"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <div class="horizontal-line"></div>
+
+        <article class="card-container event-organize">
+          <section class="card ">
+            <div class="card-content bg-gray">
+              <h2 class="card-title">Notable Artists</h2>
+              <span class="card-description">
+                Over the 15 years. BAME Records has been home to a roster pf talented artist who have made a significate
+                impactOver the 15 years. BAME Records has been home to a roster pf talented artist who have made a significate
+                impact
+                <!-- list of events  -->
+              </span>
+              <h2 class="card-title-sub">Artist Worked With</h2>
+            </div>
+          </section>
+
+          <div id="artists" class="card-lists">
+            <a href="https://negestatofficial.com/" class="card-list">
+              <img alt="Negestat " src="assets/images/artist/negestat.jpg" />
+              <h3>negestat</h3>
+              <p>music artist</p>
+            </a>
+            <a href="https://negestatofficial.com/" class="card-list">
+              <img
+                alt="Negestat "
+                src="assets/images/artist/freepik__candid-image-photography-natural-textures-highly-r__57291.jpeg"
+              />
+              <h3>Rophnan</h3>
+              <p>music artist</p>
+            </a>
+            <a href="https://negestatofficial.com/" class="card-list">
+              <img alt="Negestat " src="assets/images/artist/teddyo.jpg" />
+              <h3>Tedy yo</h3>
+              <p>music artist</p>
+            </a>
+            <a href="https://negestatofficial.com/" class="card-list">
+              <img alt="Negestat " src="assets/images/artist/jalud.jpg" />
+              <h3>Jalud</h3>
+              <p>music artist</p>
+            </a>
+            <a href="https://negestatofficial.com/" class="card-list">
+              <img alt="Negestat " src="assets/images/artist/samigo.jpeg" />
+              <h3>samigo</h3>
+              <p>music artist</p>
+            </a>
+            <a href="https://negestatofficial.com/" class="card-list">
+              <img alt="Negestat " src="assets/images/artist/abeba-desalegn.jpg" />
+              <h3>abeba desalegn</h3>
+              <p>music artist</p>
+            </a>
+            <a href="https://negestatofficial.com/" class="card-list">
+              <img alt="Negestat " src="assets/images/artist/4zw9hzeh.png" />
+              <h3>kake</h3>
+              <p>music artist</p>
+            </a>
+            <a href="https://negestatofficial.com/" class="card-list">
+              <img alt="Negestat " src="assets/images/artist/channels4_profile.jpg" />
+              <h3>kake</h3>
+              <p>music artist</p>
+            </a>
+          </div>
+          <div class="t-align-end"><a href="?all-artists" class="btn-primary">View All Artists</a></div>
+        </article>
+
+        <div class="horizontal-line"></div>
+        <article class="card-container event-organize">
+          <section class="card ">
+            <div class="card-content bg-gray">
+              <h2 class="card-title">Event Organizing Expertise</h2>
+              <p class="">
+                in addition to its musical endeavors, BAME Records & Events has garnered a reputation for its exceptional event
+                organizing capacity. From intimate album launch parties to large-scale festivals. DAME Events hos curated
+                memorable experiences that have brought together music lovers from all walks of life.
+              </p>
+              <!-- list of events  -->
+            </div>
+          </section>
+
+          <section class="card">
+            <div class="card-content">
+              <h2 class="card-title-sub">Some events we organized</h2>
+              <ul id="events">
+                <li>
+                  <a rel="noopener" href="https://www.greatrun.org/events/" target="_blank">
+                    <img src="assets/images/event/party-image.jpeg" alt="" /> <span>Great run events </span>
+                  </a>
+                </li>
+
+                <li>
+                  <a rel="noopener" href="https://youtu.be/Qe2D75aw490?si=pSSW33ruoqZ09ILi" target="_blank">
+                    <img src="assets/images/event/OIP (3).jpeg" alt="" />
+                    <span>Concert with chachi tadesse at meskal square </span>
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    rel="noopener"
+                    href="https://www.youtube.com/watch?v=4944BIUPCcY&pp=ygUQT3ppZSBIb3Rlcmwgc2hvdw%3D%3D"
+                    target="_blank"
+                  >
+                    <img src="assets/images/event/OIP (2).jpeg" alt="" /> <span>Ozie Hoterl show </span>
+                  </a>
+                </li>
+
+                <li>
+                  <a rel="noopener" href="https://www.youtube.com/watch?v=9Sh9Hk_Ht30" target="_blank">
+                    <img src="assets/images/event/OIP (4).jpeg" alt="" /> <span>mind plus math </span>
+                  </a>
+                </li>
+
+                <li>
+                  <a rel="noopener" href="https://www.youtube.com/watch?v=9Sh9Hk_Ht30" target="_blank">
+                    <img src="assets/images/event/IMG_20230405_075155.jpg" alt="" /> <span>timket </span>
+                  </a>
+                </li>
+
+                <li>
+                  <a rel="noopener" href="https://www.youtube.com/watch?v=9Sh9Hk_Ht30" target="_blank">
+                    <img src="assets/images/event/podcast.jpeg" alt="" /> <span>mind plus math </span>
+                  </a>
+                </li>
+
+                <li>
+                  <a rel="noopener" href="https://www.youtube.com/watch?v=9Sh9Hk_Ht30" target="_blank">
+                    <img src="assets/images/event/podcast.jpeg" alt="" /> <span>chirs </span>
+                  </a>
+                </li>
+              </ul>
+              <!-- list of events  -->
+            </div>
+          </section>
+        </article>
+
+        <article class="card-container event-organize">
+          <section class="card ">
+            <div class="card-content bg-gray"><h2 class="card-title-sub">New Events</h2></div>
+          </section>
+
+          <div id="artists" class="card-lists">
+            <a href="https://www.youtube.com/watch?v=4944BIUPCcY&pp=ygUQT3ppZSBIb3Rlcmwgc2hvdw%3D%3D" class="card-list">
+              <img alt="Negestat " src="assets/images/event/OIP (2).jpeg" />
+              <h3>Ozie Hoterl show</h3>
+              <p>Event Date: 2024-11-29</p>
+              <p>Event Place: Addis Ababa</p>
+            </a>
+            <a href="https://www.youtube.com/watch?v=9Sh9Hk_Ht30" class="card-list">
+              <img alt="Negestat " src="assets/images/event/podcast.jpeg" />
+              <h3>chirs</h3>
+              <p>Event Date: 2024-11-09</p>
+              <p>Event Place: addis ababa</p>
+            </a>
+          </div>
+          <!-- <div class="t-align-end"><a href="?all-artists" class="btn-primary">View All Artists</a></div> -->
+        </article>
+
+        <div class="horizontal-line"></div>
+
+        <div class="content-card">
+          <!-- image transition -->
+          <div class="card">
+            <div class="image-slider">
+              <div id="studio-images" class="image-container">
+                <img src="assets/images/music-production.jpeg" alt="" /> <img src="assets/images/podcast.png" alt="" />
+                <img src="assets/images/The-Best-Music-Production-Podcasts-1536x1023.jpg" alt="" />
+                <img src="assets/images/LS-208_InControlRoom.jpeg" alt="" />
+              </div>
+              <div class="controls">
+                <button onclick="StudioImageNext()"><i class="fa-solid fa-caret-left"></i></button>
+                <button onclick="StudioImageNext()"><i class="fa fa-solid fa-caret-right"></i></button>
+              </div>
+            </div>
+          </div>
+
+          <!-- booking -->
+          <div class="card">
+            <div class="booking-list">
+              <h3>Booking studio</h3>
+              <ul>
+                <li>
+                  <span><abbr title="Monday to Sunday">M-S</abbr> 04:00AM-02:00PM </span>
+                  <button onclick="toggleCard()">book now</button>
+                </li>
+                <li>
+                  <span><abbr title="Monday to Sunday">M-S</abbr> 04:00AM-02:00PM </span>
+                  <button onclick="toggleCard()">book now</button>
+                </li>
+                <li>
+                  <span><abbr title="Monday to Sunday">M-S</abbr> 04:00AM-02:00PM </span>
+                  <button onclick="toggleCard()">book now</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="horizontal-line"></div>
+
+        <!-- add studio booking  -->
+      </main>
+
+      <footer id="content">
+        <div class="footer-content">
+          <div class="footer-section about">
+            <h2>BAME Records</h2>
+            <p>
+              BAME Records is dedicated to promoting Ethiopian talent and preserving the rich musical heritage of the nation.
+              Join us in supporting artists and discovering new music.
+            </p>
+          </div>
+          <div class="footer-section links">
+            <h2>Links</h2>
+            <ul>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="#events">Events</a></li>
+            </ul>
+          </div>
+          <div class="footer-section contact">
+            <h2>Contact Us</h2>
+            <p><i class="fa fa-at"></i> <a href="mailto:info@bamerecords.com">info@bamerecords.cola</a></p>
+            <p>
+              <i class="fa-brands fa-facebook"></i>
+              <a target="_blank" href="https://www.facebook.com/bamerecords">BAME RECORDS</a>
+            </p>
+            <p>
+              <i class="fa-brands fa-youtube"></i>
+              <a target="_blank" href="https://www.youtube.com/@bamerecords">BAME RECORDS</a>
+            </p>
+            <p><i class="fa fa-phone" aria-hidden="true"></i> <a href="tell:+251 123 456 789">+251 123 456 789</a></p>
+          </div>
+        </div>
+        <div class="footer-bottom"><p>&copy; 2023 BAME Records. All Rights Reserved.</p></div>
+      </footer>
+    </div>
+
+    <div class="music_player">
+      <button
+        onclick="AudioPlayer()"
+        class="
+    play-audio"
+      >
+        <i class="fa fa-play" aria-hidden="true"></i>
+      </button>
+    </div>
+
+    <!-- layout container -->
+
+    <div class="layout-container">
+      <div class="card">
+        <h2>Booking Studio</h2>
+        <div class="card-text">
+          <p>Book a studio to record your music, work on your compositions, or simply enjoy the serene atmosphere.</p>
+          <p>
+            <strong><i class="fa fa-clock" aria-hidden="true"> </i> </strong> Monday-Sunday, 04:00AM - 02:00PM
+          </p>
+          <p>
+            <strong><i class="fa fa-location-arrow" aria-hidden="true"></i> </strong>
+            <button onclick="toggleMapHeight()">Ethiopia | Addis Ababa <i class="fa-solid fa-up-right-from-square"></i></button>
+          </p>
+          <iframe
+            class="address-map"
+            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d4967.513750090842!2d38.768132!3d8.956658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOMKwNTcnMjQuMCJOIDM4wrA0NicwNS4zIkU!5e1!3m2!1sen!2set!4v1731099429057!5m2!1sen!2set"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <p>
+            <strong> <i class="fa fa-phone" aria-hidden="true"></i> </strong>
+            <a href="tell:0940934934">(+251) 9456-7890 <i class="fa-solid fa-up-right-from-square"></i> </a>
+          </p>
+          <p>
+            <strong> <i class="fa fa-money-bill" aria-hidden="true"> </i> </strong> $10 per hour
+          </p>
+        </div>
+
+        <form>
+          <div class="form-group">
+            <label for="name">Name</label> <input minlength="3" required type="text" id="name" placeholder="Enter name" />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label> <input required type="email" id="email" placeholder="Enter email" />
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input required type="number" minlength="10" id="phone" placeholder="Enter phone number" />
+          </div>
+
+          <div class="buttons">
+            <button type="submit">Book now</button> <button onclick="toggleCard()" type="button">Cancel</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
